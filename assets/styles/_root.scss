@@ -1,0 +1,27 @@
+:root {
+    @each $color, $value in $theme-colors {
+        --bg-#{$color}: #{$value};
+    }
+    @each $color, $value in $theme-colors {
+        --type-#{$color}: #{$value};
+    }
+    @each $size, $value in $heading-font-sizes {
+        --type-size-#{$size}: #{$value};
+    }
+    @each $size, $value in $display-font-size {
+        --type-size-#{$size}: #{$value};
+    }
+    --type-headline-color: #{$primary};
+    --type-body-color: #{$font-color};
+    --btn-link-color: #{$secondary};
+}
+
+main {
+    padding-left: $menu-width;
+    min-height: 100vh;
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding-left: 0px;
+        padding-top: $menu-width;
+    }
+}

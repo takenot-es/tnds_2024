@@ -1,0 +1,37 @@
+a {
+    text-decoration: none;
+}
+
+.btn-link {
+    color: var(--btn-link-color);
+    text-transform: capitalize;
+    padding-bottom: calc($spacer-1 * .5);
+    position: relative;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: var(--btn-link-color);
+        transition: all .3s ease-in-out;
+    }
+
+    &:after {
+        content: 'arrow_forward_ios';
+        font-family: 'Material Symbols Outlined';
+        -webkit-font-feature-settings: 'liga';
+        position: absolute;
+        top: 1px;
+    }
+
+    &:hover {
+        opacity: $muted-text;
+        &:before {
+            width: 100%;
+        }
+    }
+}

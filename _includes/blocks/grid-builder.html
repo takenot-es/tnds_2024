@@ -1,0 +1,7 @@
+<div class="{{ section.section_classes }} {% if section.fullwidth !='true' %}container{% endif %}">
+    {% for column in section.columns %}
+    <div class="col-md-{{ column.column_width }} {{ column.column_classes }}">
+        {{ column.content }}
+    </div>
+    {% endfor %}
+</div>

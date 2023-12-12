@@ -1,0 +1,73 @@
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $body-line-height;
+    color: var(--type-body-color);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin-bottom: $spacer-1;
+    color: var(--type-body-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-family-headline;
+    color: $primary;
+    line-height: $headline-line-height;
+    font-weight: $headline-font-weight;
+    margin-top: 0;
+}
+
+h6 {
+    text-transform: uppercase;
+    line-height: $headline-line-height;
+    font-weight: 400;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--type-headline-color);
+}
+
+ul, ul > li, li {
+    color: var(--type-body-color);
+}
+
+.list-unstyled {
+    padding: 0;
+    list-style: none;
+}
+
+@each $target, $type-size in $heading-font-sizes {
+    #{$target}, .#{$target} {
+        font-size: var(--type-size-#{$target});
+    }
+}
+
+@each $target, $type-size in $display-font-size {
+    .display-#{$target} {
+        font-family: $font-family-headline;
+        font-weight: $display-font-weight;
+        line-height: $display-line-height;
+        font-size: $type-size;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        color: $value;
+        opacity: 1;
+    }
+}
+
+.text-muted {
+    opacity: $muted-text;
+}
+
+.text-transparent {
+    opacity: .4;
+}

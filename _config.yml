@@ -1,0 +1,63 @@
+title: Takenotes Design Studio
+title_acronym: TNDS
+email: ryan@takenot.es
+description: Takenotes Design Studio is the design studio (desk in my living room) of me, Ryan Underwood. I am a non-award winning (It's all politics and I never submit anyways. I'm not bitter.) designer, leader, and somewhat of a front-end developer.
+brief_desc: The freelance studio of Ryan Underwood. A design leader guiding businesses to success.
+baseurl: "" 
+url: ""
+canonical_url: "http://takenot.es" 
+github_username:  takenot-es
+instagram: noble_whiskers
+linkedin: https://www.linkedin.com/in/ryanwunderwood/
+dribbble: https://dribbble.com/ryanunderwood
+
+logo_style: (T<span>NDS</span>)
+
+featured_image: https://s3.us-east-2.wasabisys.com/takenotes/personal/site_featured.png
+favicon: https://s3.us-east-2.wasabisys.com/takenotes/personal/favicon.png
+
+google_tag: UA-112100017-1
+
+sass:
+  sass_dir: /assets/sass/
+
+
+category: 
+  - Art Direction
+  - Design System Lead
+  - Branding
+  - Front-End Development
+  - Graphic Designer
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+  work:
+    output: false
+    permalink: /work/:title/
+  
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Core Title -->
+<title>{%- if page.title -%}{{ page.title }} || {{ site.title }}{% else %}{{ site.title }}{%- endif %}</title>
+<!-- End Title -->
+
+<!-- Basic Meta -->
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+<meta name="keywords" content="{% if page.category %}{% for category in page.category | limit: 5 %}{{ category | append: ', ' }}{% endfor %}{% else %}{% for category in site.category | limit: 5 %}{{ category | append: ', ' }}{% endfor %}{% endif %}">
+<link rel="canonical" href="{{ site.canonical_url }}{{ page.url }}">
+<link rel="icon" type="image/x-icon" href="{{ site.favicon }}">
+<!-- End Basic Meta -->
+
+<!-- Social Cards -->
+<meta property="og:title" content="{%- if page.title -%}{{ page.title }} || {{ site.title }}{% else %}{{ site.title }}{%- endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+<meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}">
+<meta property="og:url" content="{{ site.canonical_url }}{{ page.url }}">
+<!-- End Social Cards -->
+
+<!-- Twitter (I refuse to call it X) -->
+<meta name="twitter:card" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+<meta name="twitter:title" content="{%- if page.title -%}{{ page.title }} || {{ site.title }}{% else %}{{ site.title }}{%- endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+<meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.featured_image }}{% endif %}">
+<!-- End Twitter (I refuse to call it X) -->

@@ -1,0 +1,151 @@
+$primary:           #0D1925;
+$secondary:         #89A598;
+$third:             #F5E80F;
+$gray:              #3F424D;
+$muted-gray:        #8d8d8d;
+$light:             #D1CAB7;
+$white:             #fff;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'third': $third,
+    'gray': $gray,
+    'light-gray': $muted-gray,
+    'light': $light,
+    'white': $white,
+) !default;
+
+
+$breakpoint-xxl:                1400px;
+$breakpoint-xl:                 1200px;
+$breakpoint-lg:                 992px;
+$breakpoint-md:                 768px;
+$breakpoint-sm:                 576px;
+
+$grid-breakpoints: (
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl,
+    'xxl': $breakpoint-xxl,
+) !default;
+
+$spacer:                        1rem;
+$spacer-1:                      1rem;
+$spacer-2:                      $spacer-1 * 1.250;
+$spacer-3:                      $spacer-2 * 1.250;
+$spacer-4:                      $spacer-3 * 1.250;
+$spacer-5:                      $spacer-4 * 1.250;
+$spacer-6:                      $spacer-5 * 1.250;
+$spacer-7:                      $spacer-6 * 1.250;
+$spacer-8:                      $spacer-7 * 1.250;
+$spacer-9:                      $spacer-8 * 1.250;
+$spacer-10:                     $spacer-9 * 1.250;
+
+$spacing-units: (
+    '0': 0,
+    '1' : $spacer-1 ,
+    '2' : $spacer-2 ,
+    '3' : $spacer-3,
+    '4' : $spacer-4,
+    '5' : $spacer-5,
+    '6' : $spacer-6,
+    '7' : $spacer-7,
+    '8' : $spacer-8,
+    '9' : $spacer-9,
+    '10' : $spacer-10,
+) !default;
+
+$axis: (
+    't': 'top', 
+    'r': 'right', 
+    'b': 'bottom', 
+    'l': 'left',
+) !default;
+
+$grid-pm: (
+    'p': 'padding',
+    'm': 'margin',
+) !default;
+
+$heights-viewport: (
+    1: 10vh,
+    2: 20vh,
+    3: 30vh,
+    4: 40vh,
+    5: 50vh,
+    6: 60vh,
+    7: 70vh,
+    8: 80vh,
+    9: 90vh,
+    10: 100vh,
+)!default;
+
+$br-pill:                  50rem;
+$br-sm:                    4px;
+$br-md:                    8px;
+$br-lg:                    16px;
+$br-xl:                    32px;
+
+$radius: (
+    'sm': $br-sm,
+    'md': $br-md,
+    'lg': $br-lg,
+    'xl': $br-xl,
+    'pill': $br-pill,
+) !default;
+
+$radius-corners: (
+    'tl': top-left,
+    'tr': top-right,
+    'bl': bottom-left,
+    'br': bottorm-right,
+) !default;
+
+$font-size-base:                1rem;
+$body-line-height:              1.5;
+$font-color:                    $gray;
+$font-family-base:              'Neue Montreal';
+$font-family-headline:          'Cambon';
+$muted-text:                    .7;
+
+$display-font-size: (
+    '1': calc(1.625rem + 14.5vw),
+    '2': calc(1.575rem + 3.9vw),
+    '3': calc(1.525rem + 3.3vw),
+    '4': calc(1.475rem + 2.7vw),
+    '5': calc(1.425rem + 2.1vw),
+    '6': calc(1.375rem + 1.5vw),
+) !default;
+$display-line-height:           1.1;
+$display-font-weight:           300;
+
+$heading-font-sizes: (
+    'h1': calc(1.375rem + 1.5vw),
+    'h2': calc(1.325rem + .9vw),
+    'h3': calc(1.3rem + .6vw),
+    'h4': calc(1.275rem + .3vw),
+    'h5': 1.25rem,
+    'h6': 12px,
+) !default;
+$headline-line-height:          1.2;
+$headline-font-weight:          400;
+$headline-color:                $primary;
+$lead-font-size:                calc(1.275rem + .3vw);
+$lead-font-weight:              300;
+
+$link-weight:                   700;
+$link-style:                    normal;
+$link-style-hover:              null;
+$link-text-decoration:          none;
+$link-text-decoration-hover:    none;
+$link-opacity-hover:            .8;
+
+$btn-font-size:                 12px;
+$btn-font-weight:               400;
+$btn-border-radius:             $br-pill;
+
+$menu-width:                    80px;
+$menu-border:                   1px solid darken($light, .1);
+$menu-background:               $white;

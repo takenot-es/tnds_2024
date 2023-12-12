@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a href="/">
+            {{ site.logo_style }}
+        </a>
+    </div>
+    <div class="menu-toggle-container">
+        <button id="menu-toggle">
+            Menu
+        </button>
+    </div>
+</nav>
+<nav class="nav-panel">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li>
+                <h6 class="text-secondary">
+                    Navigation
+                </h6>
+            </li>
+            {% for item in site.data.navigation %}
+            <li class="navbar-link">
+                <a href="{{ item.url }}">
+                    {{ item.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

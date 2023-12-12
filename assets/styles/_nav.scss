@@ -1,0 +1,151 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $menu-width;
+    background-color: $white;
+    padding: $spacer-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: $menu-border;
+    z-index: 1000000000000000000;
+
+    .navbar-brand {
+        font-family: $font-family-headline;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+
+        a {
+            color: $secondary;
+            text-decoration: none;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .menu-toggle-container {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        > button {
+            border: none;
+            background-color: transparent;
+            color: rgba($gray, .5);
+            text-transform: uppercase;
+            transform: rotate(270deg);
+            font-size: 12px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:$breakpoint-md) {
+    .navbar {
+        top: 0;
+        left: 0;
+        bottom: none;
+        right: 0;
+        height: $menu-width;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: $menu-border; 
+
+        .navbar-brand { 
+            a {
+                letter-spacing: 0;
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .menu-toggle-container {
+            margin-right: $spacer-1;
+            margin-left: auto;
+
+            > button {
+                transform: rotate(0deg);
+            }
+
+        }
+
+    }
+}
+
+.nav-panel {
+    position: fixed;
+    z-index: 1000000000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+    padding-top: $menu-width;
+    padding-bottom: $menu-width;
+    padding-right: $menu-width;
+    padding-left: calc($menu-width + $spacer-8);
+    display: flex;
+    align-items: center;
+    background-color: $menu-background;
+    transform: translateX(-100vw);
+    transition: .3s all ease-in-out;
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li > h6 {
+            margin-bottom: $spacer-2;
+        }
+
+    }
+
+    .navbar-link {
+        margin-bottom: $spacer-2;
+        a {
+            @extend .h2;
+            text-decoration: none;
+            font-family: $font-family-headline;
+            color: $primary;
+            position: relative;
+            transition: .3s all ease-in-out;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -.5rem;
+                height: 1px;
+                border-bottom: $menu-border;
+                width: 0%;
+                transition: .3s all ease-in-out;
+            }
+
+            &:hover {
+                color: $muted-gray;
+                &::before {
+                    width: 1rem;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .nav-panel {
+        padding: $spacer-1;
+        width: 100vw;
+    }
+}

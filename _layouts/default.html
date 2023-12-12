@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include /global/meta.html %}
+    {% include /global/analytics.html %}
+    {% include /global/styles.html %}
+</head>
+<body>
+    {% include /components/navigation.html %}
+    <div class="content">
+        <main class="{{ page.title | downcase | replace: ' ', '-' }} {{ site.title  | downcase | replace: ' ', '-' }} {{ page.layout }} {{ page.permalink | remove: '.html' }} bg-{{ page.main_background}}">
+            {{ content }}
+        </main>
+    </div>
+    {% include /global/scripts.html %}
+</body>
+</html>

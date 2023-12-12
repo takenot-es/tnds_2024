@@ -1,0 +1,57 @@
+.home-work-loop {
+    padding-top: $spacer-3;
+    padding-bottom: $spacer-3;
+    .featured-project {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: $spacer-3;
+        padding-bottom: $spacer-3;
+        min-height: 450px;
+        display: flex;
+        align-items: center;
+
+        .project-card {
+            max-width: 450px;
+            min-height: 350px;
+            padding: $spacer-3;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .project-list {
+        .project-card {
+            padding-top: $spacer-2;
+            padding-bottom: $spacer-2;
+            padding-left: 0;
+            border-top: 1px solid rgba($light, .25);
+            position: relative;
+            z-index: 1;
+            transition: all .3s ease-in-out;
+
+            h5 {
+                transition: all .3s ease-in-out;
+            }
+
+            .description {
+                font-size: $font-size-base;
+                font-family: $font-family-base;
+                opacity: $muted-text;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                border-top: 1px solid rgba($light, 1);
+
+                h5 {
+                    .description {
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+}
