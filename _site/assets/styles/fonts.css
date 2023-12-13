@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Cambon';
+    src: url('/assets/fonts/Cambon-LightItalic.eot');
+    src: url('/assets/fonts/Cambon-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Cambon-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/Cambon-LightItalic.woff') format('woff'),
+        url('/assets/fonts/Cambon-LightItalic.ttf') format('truetype'),
+        url('/assets/fonts/Cambon-LightItalic.svg#Cambon-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cambon';
+    src: url('/assets/fonts/Cambon-Light.eot');
+    src: url('/assets/fonts/Cambon-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Cambon-Light.woff2') format('woff2'),
+        url('/assets/fonts/Cambon-Light.woff') format('woff'),
+        url('/assets/fonts/Cambon-Light.ttf') format('truetype'),
+        url('/assets/fonts/Cambon-Light.svg#Cambon-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/assets/fonts/NeueMontreal-BoldItalic.eot');
+    src: url('/assets/fonts/NeueMontreal-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/NeueMontreal-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/NeueMontreal-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/NeueMontreal-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/NeueMontreal-BoldItalic.svg#NeueMontreal-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/assets/fonts/NeueMontreal-Bold.eot');
+    src: url('/assets/fonts/NeueMontreal-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/NeueMontreal-Bold.woff2') format('woff2'),
+        url('/assets/fonts/NeueMontreal-Bold.woff') format('woff'),
+        url('/assets/fonts/NeueMontreal-Bold.ttf') format('truetype'),
+        url('/assets/fonts/NeueMontreal-Bold.svg#NeueMontreal-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/assets/fonts/NeueMontreal-Regular.eot');
+    src: url('/assets/fonts/NeueMontreal-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/NeueMontreal-Regular.woff2') format('woff2'),
+        url('/assets/fonts/NeueMontreal-Regular.woff') format('woff'),
+        url('/assets/fonts/NeueMontreal-Regular.ttf') format('truetype'),
+        url('/assets/fonts/NeueMontreal-Regular.svg#NeueMontreal-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('/assets/fonts/NeueMontreal-Italic.eot');
+    src: url('/assets/fonts/NeueMontreal-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/NeueMontreal-Italic.woff2') format('woff2'),
+        url('/assets/fonts/NeueMontreal-Italic.woff') format('woff'),
+        url('/assets/fonts/NeueMontreal-Italic.ttf') format('truetype'),
+        url('/assets/fonts/NeueMontreal-Italic.svg#NeueMontreal-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
