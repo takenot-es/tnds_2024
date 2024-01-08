@@ -1,0 +1,5 @@
+@each $radius, $size in $radius {
+    .border-#{$radius} {
+        border-radius: $size;
+    }
+}

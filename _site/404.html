@@ -51,57 +51,54 @@
 <!-- End Theme Styles-->
 <!-- Start Icons -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!-- end Icons -->
+<!-- Start Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300;0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,700;0,5..1200,800;0,5..1200,900;1,5..1200,300;1,5..1200,400;1,5..1200,500;1,5..1200,600;1,5..1200,700;1,5..1200,800;1,5..1200,900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- End Fonts -->
+<!-- Start AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- End AOS -->
 </head>
 <body>
-    <nav class="navbar">
-    <div class="navbar-brand">
-        <a href="/">
-            (T<span>NDS</span>)
+    <div class="navbar-container--desktop">
+    <div class="navbar">
+        <a href="/index.html" class="navbar-logo">
+            R
         </a>
+        <header class="navbar-nav border-sm">
+            <ul class="navbar-nav-list">
+                
+                <li class="nav-item">
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="/work/">
+                        Work
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="/about/">
+                        About
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="/contact/">
+                        Contact
+                    </a>
+                </li>
+            
+            </ul>
+        </header>
     </div>
-    <div class="menu-toggle-container">
-        <button id="menu-toggle">
-            Menu
-        </button>
-    </div>
-</nav>
-<nav class="nav-panel">
-    <div class="container">
-        <ul class="navbar-nav">
-            <li>
-                <h6 class="text-secondary">
-                    Navigation
-                </h6>
-            </li>
-            
-            <li class="navbar-link">
-                <a href="/">
-                    Home
-                </a>
-            </li>
-            
-            <li class="navbar-link">
-                <a href="/work/">
-                    Work
-                </a>
-            </li>
-            
-            <li class="navbar-link">
-                <a href="/about/">
-                    About
-                </a>
-            </li>
-            
-            <li class="navbar-link">
-                <a href="/contact/">
-                    Contact
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-</nav>
+</div>
     <div class="content">
         <main class=" takenotes-design-studio default /404 bg-">
             <style type="text/css" media="screen">
@@ -134,6 +131,9 @@
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
 <script>    
   $("#menu-toggle").click(function(){
   $(".nav-panel").toggleClass("active");
@@ -186,6 +186,9 @@ anime.timeline({loop: false})
     duration: 3000,
     delay: (el, i) => 1000 + 30 * i
   })
+  </script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>

@@ -5,6 +5,9 @@
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
 <script>    
   $("#menu-toggle").click(function(){
   $(".nav-panel").toggleClass("active");
@@ -57,4 +60,7 @@ anime.timeline({loop: false})
     duration: 3000,
     delay: (el, i) => 1000 + 30 * i
   })
+  </script>
+  <script>
+    AOS.init();
   </script>

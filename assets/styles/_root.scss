@@ -13,12 +13,13 @@
     }
     --type-headline-color: #{$primary};
     --type-body-color: #{$font-color};
-    --btn-link-color: #{$secondary};
+    --btn-link-color: #{$primary};
+    --btn-link-text-color: #{$white};
+    --border-color: #{$gray};
 }
 
-main {
+.buffer {
     padding-left: $menu-width;
-    min-height: 100vh;
 
     @media screen and (max-width: $breakpoint-md) {
         padding-left: 0px;

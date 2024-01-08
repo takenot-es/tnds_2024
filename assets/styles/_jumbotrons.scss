@@ -1,28 +1,5 @@
-.plain-text-jumbotron {
-    min-height: 100vh;
+.home-hero {
+    min-height: 70vh;
     display: flex;
     align-items: flex-end;
-}
-
-.video-jumbotron {
-    position: relative;
-    overflow-y: hidden;
-    z-index: 1;
-
-    video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-
-    .container-fluid {
-        min-height: 95vh;
-        padding: $spacer-10 0;
-        background: rgba($primary, 1);
-        background: linear-gradient(180deg, rgba($primary,0) 10%, rgba($primary,1) 100%);
-    }
-
 }

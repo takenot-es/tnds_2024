@@ -1,14 +1,13 @@
-.bg-{
-    &light, &white {
-        --type-headline-color: #{$primary};
-        --type-body-color: #{$gray};  
-    }
-    &primary {
-        --type-headline-color: #{$white};
-        --type-body-color: #{$white};
-    }
-    &secondary {
-        --type-headline-color: #{$light};
-        --type-body-color: #{$white};
-    }
+.bg-primary {
+    --btn-link-color: #{$white};
+    --btn-link-text-color: #{$primary};
+    --type-headline-color: #{$white};
+    --type-body-color: #{$white};
+}
+
+.bg-white {
+    --btn-link-color: #{$primary};
+    --btn-link-text-color: #{$white};
+    --type-headline-color: #{$primary};
+    --type-body-color: #{$gray};
 }

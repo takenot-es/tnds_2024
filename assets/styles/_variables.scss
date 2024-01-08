@@ -1,15 +1,13 @@
-$primary:           #0D1925;
-$secondary:         #89A598;
-$third:             #F5E80F;
+$primary:           #000;
+$secondary:         #d5d5ba;
 $gray:              #3F424D;
 $muted-gray:        #8d8d8d;
-$light:             #D1CAB7;
+$light:             #f3f4f4;
 $white:             #fff;
 
 $theme-colors: (
     'primary': $primary,
     'secondary': $secondary,
-    'third': $third,
     'gray': $gray,
     'light-gray': $muted-gray,
     'light': $light,
@@ -106,12 +104,13 @@ $radius-corners: (
 $font-size-base:                1rem;
 $body-line-height:              1.5;
 $font-color:                    $gray;
-$font-family-base:              'Neue Montreal';
-$font-family-headline:          'Cambon';
-$muted-text:                    .7;
+$font-family-base:              'Sohne Mono';
+$font-family-headline:          'Sohne';
+$font-family-display:           null;
+$muted-text:                    .5;
 
 $display-font-size: (
-    '1': calc(1.625rem + 14.5vw),
+    '1': calc(1.625rem + 6vw),
     '2': calc(1.575rem + 3.9vw),
     '3': calc(1.525rem + 3.3vw),
     '4': calc(1.475rem + 2.7vw),
@@ -119,7 +118,8 @@ $display-font-size: (
     '6': calc(1.375rem + 1.5vw),
 ) !default;
 $display-line-height:           1.1;
-$display-font-weight:           300;
+$display-font-weight:           400;
+$display-transform:             uppercase;
 
 $heading-font-sizes: (
     'h1': calc(1.375rem + 1.5vw),
@@ -127,13 +127,13 @@ $heading-font-sizes: (
     'h3': calc(1.3rem + .6vw),
     'h4': calc(1.275rem + .3vw),
     'h5': 1.25rem,
-    'h6': 12px,
+    'h6': 1rem,
 ) !default;
 $headline-line-height:          1.2;
 $headline-font-weight:          400;
 $headline-color:                $primary;
 $lead-font-size:                calc(1.275rem + .3vw);
-$lead-font-weight:              300;
+$lead-font-weight:              400;
 
 $link-weight:                   700;
 $link-style:                    normal;
@@ -147,5 +147,5 @@ $btn-font-weight:               400;
 $btn-border-radius:             $br-pill;
 
 $menu-width:                    80px;
-$menu-border:                   1px solid darken($light, .1);
-$menu-background:               $white;
+$menu-border:                   1px solid rgba($secondary, .1);
+$menu-background:               $primary;
