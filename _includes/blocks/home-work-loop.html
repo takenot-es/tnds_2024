@@ -34,13 +34,26 @@
         <div class="row">
             {% for item in sorted | limit: 3 | offset: 2 %}
             <div class="col-md-4">
-                <a href="{{ item.url }}">
-                    <div class="border-md project-card" style="background-image: url('{{ item.loop_image }}');">
+               <div class="project-card">
+                    <a href="{{ item.url }}">
+                        <figure class="card--image border-md">
+                            <img src="{{ item.loop_image }}" alt="{{ item.title }}">
+                        </figure>
+                    </a>
+                    <div class="card--content py-6">
                         <h3>
                             {{ item.title }}
                         </h3>
+                        <p class="text-muted">
+                            {{ item.description }}
+                        </p>
+                        <p class="mb-0 mt-4">
+                            <a href="{{ item.url }}" class="button">
+                                See the project
+                            </a>
+                        </p>
                     </div>
-                </a>
+               </div>
             </div>
             {% endfor %}
         </div>

@@ -5,15 +5,55 @@ a {
 }
 
 .button {
-    display: inline-block;
-    padding: $spacer-1;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--btn-link-color);
-    color: var(--btn-link-text-color);
+    display: inline-flex;
+    position: relative;
+    padding: $spacer-1 $spacer-6 $spacer-1 $spacer-1;
+    color: var(--btn-link-color);
     text-decoration: none;
     font-family: $font-family-headline;
-    border-radius: 50rem;
     font-weight: 400;
     margin-bottom: 0;
+    transition: all .3s ease-in-out;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border: 1px solid;
+        border-color: var(--btn-link-color);
+        border-radius: 50rem;
+        transition: all .2s ease-in-out;
+    }
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: $spacer-1;
+        font-family: 'Material Symbols Outlined';
+        content: "arrow_right_alt";
+        -webkit-font-feature-settings: 'liga';
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover {
+        padding: $spacer-1 $spacer-6 $spacer-1 0;
+
+        &:before {
+            width: 56px;
+            height: 56px;
+            right: -$spacer-1;
+            background-color: var(--btn-link-color);
+        }
+
+        &:after {
+            right: $spacer-1 * .3;
+            color: var(--btn-link-text-color);
+        }
+
+    }
+
 }

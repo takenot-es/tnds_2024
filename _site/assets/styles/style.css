@@ -26,7 +26,7 @@
   --type-headline-color: #000;
   --type-body-color: #3F424D;
   --btn-link-color: #000;
-  --btn-link-text-color: #fff;
+  --btn-link-text-color: #000;
   --border-color: #3F424D;
 }
 
@@ -218,17 +218,50 @@ a {
 }
 
 .button {
-  display: inline-block;
-  padding: 1rem;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--btn-link-color);
-  color: var(--btn-link-text-color);
+  display: inline-flex;
+  position: relative;
+  padding: 1rem 3.0517578125rem 1rem 1rem;
+  color: var(--btn-link-color);
   text-decoration: none;
   font-family: "Sohne";
-  border-radius: 50rem;
   font-weight: 400;
   margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid;
+  border-color: var(--btn-link-color);
+  border-radius: 50rem;
+  transition: all 0.2s ease-in-out;
+}
+.button:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  font-family: "Material Symbols Outlined";
+  content: "arrow_right_alt";
+  -webkit-font-feature-settings: "liga";
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  padding: 1rem 3.0517578125rem 1rem 0;
+}
+.button:hover:before {
+  width: 56px;
+  height: 56px;
+  right: -1rem;
+  background-color: var(--btn-link-color);
+}
+.button:hover:after {
+  right: 0.3rem;
+  color: var(--btn-link-text-color);
 }
 
 .navbar-container--desktop {
@@ -941,19 +974,19 @@ a {
   top: 1rem;
 }
 
-.project-card {
-  min-height: 450px;
-  padding: 1rem;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.project-card .card--image {
+  height: 450px;
+  overflow: hidden;
+  object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .project-card {
-    margin-bottom: 1rem;
-  }
+.project-card .card--image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.7s ease-in-out;
+}
+.project-card .card--image:hover img {
+  transform: scale(115%);
 }
 
 /*# sourceMappingURL=style.css.map */
