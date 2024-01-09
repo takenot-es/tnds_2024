@@ -1,12 +1,12 @@
 :root {
   --bg-primary: #000;
-  --bg-secondary: #d5d5ba;
+  --bg-secondary: #F04F23;
   --bg-gray: #3F424D;
   --bg-light-gray: #8d8d8d;
   --bg-light: #f3f4f4;
   --bg-white: #fff;
   --type-primary: #000;
-  --type-secondary: #d5d5ba;
+  --type-secondary: #F04F23;
   --type-gray: #3F424D;
   --type-light-gray: #8d8d8d;
   --type-light: #f3f4f4;
@@ -80,8 +80,10 @@ h1, h2, h3, h4, h5 {
 h6 {
   text-transform: uppercase;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 2px;
   margin-top: 0;
+  font-family: "Sohne Mono";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,7 +165,7 @@ h6, .h6 {
 }
 
 .text-secondary {
-  color: #d5d5ba;
+  color: #F04F23;
   opacity: 1;
 }
 
@@ -205,8 +207,12 @@ h6, .h6 {
   text-align: right;
 }
 
+.lead {
+  font-size: 1.25rem;
+}
+
 hr {
-  opacity: 1;
+  opacity: 0.2;
   border: 0;
   border-bottom: 1px solid var(--border-color);
 }
@@ -291,7 +297,7 @@ a {
   border-radius: 50rem;
 }
 .navbar-container--desktop .navbar-nav {
-  background-color: #d5d5ba;
+  background-color: #F04F23;
   padding: 1rem;
   transform: rotate(180deg);
 }
@@ -358,6 +364,10 @@ a {
   background-color: var(--bg-white);
 }
 
+.shadow {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.0509803922), 0 12px 24px rgba(0, 0, 0, 0.1019607843);
+}
+
 .border-sm {
   border-radius: 4px;
 }
@@ -382,6 +392,47 @@ a {
   min-height: 70vh;
   display: flex;
   align-items: flex-end;
+}
+
+.casestudy-jumbotron {
+  min-height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: -1;
+}
+
+.casestudy-title-card {
+  margin-top: -4.768371582rem;
+  height: 100%;
+}
+
+ul.cat-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+ul.cat-list li {
+  padding: 1rem;
+  background-color: #f3f4f4;
+  border-radius: 50rem;
+  font-size: 12px;
+  display: inline-flex;
+  min-width: 125px;
+  max-height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+ul.cat-list li:not(:last-of-type) {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pt-0 {

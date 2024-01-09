@@ -24,9 +24,10 @@ h1, h2, h3, h4, h5 {
 h6 {
     text-transform: uppercase;
     line-height: $headline-line-height;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 2px;
     margin-top: 0;
-    font-family: $font-family-display;
+    font-family: $font-family-base;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,8 +85,12 @@ ul, ul > li, li {
     }
 }
 
+.lead {
+    font-size: $font-size-base * 1.250;
+}
+
 hr {
-    opacity: 1;
+    opacity: .2;
     border: 0;
     border-bottom: 1px solid var(--border-color);
 }

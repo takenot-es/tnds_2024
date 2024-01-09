@@ -34,7 +34,7 @@ collections:
     output: true
     permalink: /:title/
   work:
-    output: false
+    output: true
     permalink: /work/:title/
   
 
