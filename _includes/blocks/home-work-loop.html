@@ -1,22 +1,12 @@
-{% assign sorted = site.work | sort: 'date' | reverse %}
-{% for item in sorted | limit: 1 | offset: 1 %}
-    <div class="container-fluid bg-primary py-8 first-project buffer" style="background-image: url('{{ item.loop_image }}');" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1500">
-        <div class="container">
-            <div class="col-md-5 bg-white py-6 px-6 border-md">
-                <a href="{{ item.url }}">
-                    <h2>
-                        {{ item.title }}
-                    </h2>
-                </a>
-                <p>
-                    {{ item.description }}
-                </p>
-                <p class="mt-4 mb-0">
-                    <a href="{{ item.url }}" class="button">
-                        See the project
-                    </a>
-                </p>
-            </div>
+<div class="container-fluid bg-light pb-5 pb-md-8">
+    <div class="container">
+        <div class="row">
+            {% assign sorted = site.work | sort: 'date' | reverse %}
+            {% for item in sorted | limit: 3 | offset: 2 %}
+                <div class="col-md-{% cycle '12', '6', '6' %}">
+                    hello
+                </div>
+            {% endfor %}
         </div>
     </div>
-{% endfor %}
+</div>

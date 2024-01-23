@@ -1,104 +1,107 @@
 @font-face {
-    font-family: 'Sohne';
-    src: url('/assets/fonts/Sohne-Fett.eot');
-    src: url('/assets/fonts/Sohne-Fett.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Sohne-Fett.woff2') format('woff2'),
-        url('/assets/fonts/Sohne-Fett.woff') format('woff'),
-        url('/assets/fonts/Sohne-Fett.ttf') format('truetype'),
-        url('/assets/fonts/Sohne-Fett.svg#Sohne-Fett') format('svg');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne';
-    src: url('/assets/fonts/Sohne-Buch.eot');
-    src: url('/assets/fonts/Sohne-Buch.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Sohne-Buch.woff2') format('woff2'),
-        url('/assets/fonts/Sohne-Buch.woff') format('woff'),
-        url('/assets/fonts/Sohne-Buch.ttf') format('truetype'),
-        url('/assets/fonts/Sohne-Buch.svg#Sohne-Buch') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne';
-    src: url('/assets/fonts/Sohne-FettKursiv.eot');
-    src: url('/assets/fonts/Sohne-FettKursiv.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Sohne-FettKursiv.woff2') format('woff2'),
-        url('/assets/fonts/Sohne-FettKursiv.woff') format('woff'),
-        url('/assets/fonts/Sohne-FettKursiv.ttf') format('truetype'),
-        url('/assets/fonts/Sohne-FettKursiv.svg#Sohne-FettKursiv') format('svg');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne';
-    src: url('/assets/fonts/Sohne-BuchKursiv.eot');
-    src: url('/assets/fonts/Sohne-BuchKursiv.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Sohne-BuchKursiv.woff2') format('woff2'),
-        url('/assets/fonts/Sohne-BuchKursiv.woff') format('woff'),
-        url('/assets/fonts/Sohne-BuchKursiv.ttf') format('truetype'),
-        url('/assets/fonts/Sohne-BuchKursiv.svg#Sohne-BuchKursiv') format('svg');
+    font-family: 'GT Sectra Fine';
+    src: url('/assets/fonts/GTSectraFine-BookItalic.eot');
+    src: url('/assets/fonts/GTSectraFine-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/GTSectraFine-BookItalic.woff2') format('woff2'),
+        url('/assets/fonts/GTSectraFine-BookItalic.woff') format('woff'),
+        url('/assets/fonts/GTSectraFine-BookItalic.ttf') format('truetype'),
+        url('/assets/fonts/GTSectraFine-BookItalic.svg#GTSectraFine-BookItalic') format('svg');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Sohne Mono';
-    src: url('/assets/fonts/SohneMono-BuchKursiv.eot');
-    src: url('/assets/fonts/SohneMono-BuchKursiv.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/SohneMono-BuchKursiv.woff2') format('woff2'),
-        url('/assets/fonts/SohneMono-BuchKursiv.woff') format('woff'),
-        url('/assets/fonts/SohneMono-BuchKursiv.ttf') format('truetype'),
-        url('/assets/fonts/SohneMono-BuchKursiv.svg#SohneMono-BuchKursiv') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Mono';
-    src: url('/assets/fonts/SohneMono-FettKursiv.eot');
-    src: url('/assets/fonts/SohneMono-FettKursiv.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/SohneMono-FettKursiv.woff2') format('woff2'),
-        url('/assets/fonts/SohneMono-FettKursiv.woff') format('woff'),
-        url('/assets/fonts/SohneMono-FettKursiv.ttf') format('truetype'),
-        url('/assets/fonts/SohneMono-FettKursiv.svg#SohneMono-FettKursiv') format('svg');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sohne Mono';
-    src: url('/assets/fonts/SohneMono-Fett.eot');
-    src: url('/assets/fonts/SohneMono-Fett.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/SohneMono-Fett.woff2') format('woff2'),
-        url('/assets/fonts/SohneMono-Fett.woff') format('woff'),
-        url('/assets/fonts/SohneMono-Fett.ttf') format('truetype'),
-        url('/assets/fonts/SohneMono-Fett.svg#SohneMono-Fett') format('svg');
-    font-weight: 800;
+    font-family: 'GT Sectra Fine';
+    src: url('/assets/fonts/GTSectraFine-Book.eot');
+    src: url('/assets/fonts/GTSectraFine-Book.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/GTSectraFine-Book.woff2') format('woff2'),
+        url('/assets/fonts/GTSectraFine-Book.woff') format('woff'),
+        url('/assets/fonts/GTSectraFine-Book.ttf') format('truetype'),
+        url('/assets/fonts/GTSectraFine-Book.svg#GTSectraFine-Book') format('svg');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Sohne Mono';
-    src: url('/assets/fonts/SohneMono-Buch.eot');
-    src: url('/assets/fonts/SohneMono-Buch.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/SohneMono-Buch.woff2') format('woff2'),
-        url('/assets/fonts/SohneMono-Buch.woff') format('woff'),
-        url('/assets/fonts/SohneMono-Buch.ttf') format('truetype'),
-        url('/assets/fonts/SohneMono-Buch.svg#SohneMono-Buch') format('svg');
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-RegularItalic.eot');
+    src: url('/assets/fonts/PitchSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-RegularItalic.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-RegularItalic.woff') format('woff'),
+        url('/assets/fonts/PitchSans-RegularItalic.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-RegularItalic.svg#PitchSans-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('/assets/fonts/GTSectraDisplay-LightItalic.eot');
+    src: url('/assets/fonts/GTSectraDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/GTSectraDisplay-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/GTSectraDisplay-LightItalic.woff') format('woff'),
+        url('/assets/fonts/GTSectraDisplay-LightItalic.ttf') format('truetype'),
+        url('/assets/fonts/GTSectraDisplay-LightItalic.svg#GTSectraDisplay-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('/assets/fonts/GTSectraDisplay-Light.eot');
+    src: url('/assets/fonts/GTSectraDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/GTSectraDisplay-Light.woff2') format('woff2'),
+        url('/assets/fonts/GTSectraDisplay-Light.woff') format('woff'),
+        url('/assets/fonts/GTSectraDisplay-Light.ttf') format('truetype'),
+        url('/assets/fonts/GTSectraDisplay-Light.svg#GTSectraDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-Bold.eot');
+    src: url('/assets/fonts/PitchSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-Bold.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-Bold.woff') format('woff'),
+        url('/assets/fonts/PitchSans-Bold.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-Bold.svg#PitchSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-Regular.eot');
+    src: url('/assets/fonts/PitchSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-Regular.woff') format('woff'),
+        url('/assets/fonts/PitchSans-Regular.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-Regular.svg#PitchSans-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-BoldItalic.eot');
+    src: url('/assets/fonts/PitchSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/PitchSans-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-BoldItalic.svg#PitchSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 

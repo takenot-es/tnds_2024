@@ -1,0 +1,26 @@
+.section-mask {
+    height: 300px;
+    position: relative;
+}
+
+.has-mask {
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mask-bottom {
+    transform: rotate(180deg);
+}
+
+.mask-1 {
+    mask-image: url("/assets/media/dividers/paper-tear-one.png");
+}
+
+.bg-grid-numbers {
+    background-image: url("/assets/media/textures/grid-numbers\ 2.png");
+    background-blend-mode: multiply;
+    background-size: 1105.49px 1920px;
+    background-repeat: no-repeat;
+    background-position: left;
+}

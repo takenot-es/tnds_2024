@@ -1,14 +1,25 @@
-<div class="container-fluid py-8 buffer">
-    <div class="container">
+<div class="container-fluid bg-primary bg-grid-numbers">
+    <div class="container vh-80 py-5 py-md-8 d-flex align-items-end">
         <div class="row">
+            <div class="col-md-1 d-flex align-items-start">
+                <p class="h6 text-third sidebar-text me-md-auto">
+                    <em>
+                        {{ site.title }}
+                    </em>
+                </p>
+            </div>
             <div class="col-md-8">
-                <h1 class="display-1 words">
-                    {{ site.title }}
+                <h1 class="display-1 text-white">
+                    {{ section.headline }}
                 </h1>
-                <h3 class="words text-muted">
-                    {{ site.brief_desc}}
-                </h3>
+                <h2 class="h4 text-white">
+                    {{ section.subheadline }}
+                </h2>
             </div>
         </div>
+    </div>
+</div>
+<div class="bg-primary">
+    <div class="container-fluid section-mask has-mask mask-1 bg-light">
     </div>
 </div>

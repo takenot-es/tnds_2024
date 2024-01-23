@@ -1,18 +1,9 @@
-<div class="navbar-container--desktop">
-    <div class="navbar">
-        <a href="/index.html" class="navbar-logo">
-            R
-        </a>
-        <header class="navbar-nav border-sm">
-            <ul class="navbar-nav-list">
-                {% for nav-item in site.data.navigation %}
-                <li class="nav-item">
-                    <a href="{{ nav-item.url }}">
-                        {{ nav-item.title }}
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-        </header>
+<nav class="navigation px-3">
+  <div class="container-fluid">
+    <div class="logo-container">
+      <a href="/">
+        {% include /components/logo.svg %}
+      </a>
     </div>
-</div>
+  </div>
+</nav>

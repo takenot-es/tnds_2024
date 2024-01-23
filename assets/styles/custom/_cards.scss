@@ -1,0 +1,41 @@
+:root {
+    --card-height: 300px;
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+    :root {
+        --card-height: 400px;
+    }
+}
+
+
+.project-card {
+    padding: $spacer-2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: var(--card-height);
+
+    &-info {
+        background-color: $white;
+        padding: $spacer-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100px;
+        opacity: 0;
+        transition: all .2s linear;
+    }
+
+    $card-padding: $spacer-2 * 2;
+
+    &:hover {
+
+        .project-card-info {
+            height: calc(var(--card-height) - $card-padding);
+            opacity: 1;
+        }
+    }
+
+
+}

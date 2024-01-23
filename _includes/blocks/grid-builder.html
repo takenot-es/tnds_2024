@@ -1,9 +1,0 @@
-<div class="{{ section.section_classes }} {% if section.fullwidth !='true' %}container{% endif %}">
-    <div class="row">
-        {% for column in section.columns %}
-        <div class="col-md-{{ column.column_width }} {{ column.column_classes }}" {% if column.column_animate == 'true' %}data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900"{% endif %}>
-        {{ column.content }}
-         </div>
-        {% endfor %}
-    </div>
-</div>

@@ -5,13 +5,14 @@
     {% include /global/analytics.html %}
     {% include /global/styles.html %}
 </head>
-<body>
+<body data-bs-theme="{{ page.theme }}">
     {% include /components/navigation.html %}
     <div class="content">
-        <main class="{{ page.title | downcase | replace: ' ', '-' }} {{ site.title  | downcase | replace: ' ', '-' }} {{ page.layout }} {{ page.permalink | remove: '.html' }} bg-{{ page.main_background}}">
+        <main class="{{ page.title | downcase | replace: ' ', '-' }} {{ site.title  | downcase | replace: ' ', '-' }} {{ page.layout }} {{ page.permalink | remove: '.html' }} bg-{{ page.main_background }}">
             {{ content }}
         </main>
     </div>
+    {% include /components/footer.html %}
     {% include /global/scripts.html %}
 </body>
 </html>

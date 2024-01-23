@@ -1,9 +1,0 @@
-@each $color, $value in $theme-colors {
-    .bg-#{$color} {
-        background-color: var(--bg-#{$color});
-    }
-}
-
-.shadow {
-    box-shadow: 0 0 3px #0000000d, 0 12px 24px #0000001a;
-}
