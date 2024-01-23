@@ -20,3 +20,27 @@ a.icon-link {
     }
 
 }
+
+.large-btn {
+    @extend .h3; 
+    position: relative;
+
+    &:after {
+        content: '';
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s ease-in-out;
+        width: 0%;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+
+}

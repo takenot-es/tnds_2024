@@ -1,12 +1,15 @@
-.section-mask {
-    height: 300px;
-    position: relative;
+.mask-small {
+    height: 250px;
 }
-
-.has-mask {
+.section-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     mask-size: cover;
     mask-repeat: no-repeat;
-    mask-position: center;
+    mask-position: top;
 }
 
 .mask-bottom {
