@@ -1,3 +1,77 @@
 ---
 layout: default
 ---
+<div class="containner-fluid bg-primary py-10 boh-recipe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto bg-light rounded py-2 px-2">
+                <div class="container mb-4">
+                    <!-- Page Title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>
+                                {{ page.title }}
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- End Title -->
+                    <!-- Prep Cook Author -->
+                    <div class="row">
+                        <div class="col-md-4 has-line">
+                            <p class="small mb-0">
+                                Prep: {{ page.prep }}
+                            </p>
+                        </div>
+                        <div class="col-md-4 has-line">
+                            <p class="small mb-0">
+                                Cook: {{ page.cook }}
+                            </p>
+                        </div>
+                        <div class="col-md-4 has-line">
+                            <p class="small mb-0">
+                                Author: {% if page.author %}<a href="{{ page.link }}"><strong>{{ page.author }}</strong></a>{% else %}Ryan Underwood{% endif %}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Prep Cook Author -->
+                    <!-- Ingredients -->
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="small text-uppercase mt-1">
+                                <strong>
+                                    Ingredients:
+                                </strong>
+                            </p>
+                            <ul class="analog-list">
+                                {% for ingredient in page.ingredients %}
+                                <li>
+                                    {{ ingredient }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Ingredients -->
+                    <!-- Directions -->
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="small text-uppercase mt-1">
+                                <strong>
+                                    Directions:
+                                </strong>
+                            </p>
+                            <ul class="analog-list">
+                                {% for direction in page.directions %}
+                                <li>
+                                    {{ direction }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Directions -->
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

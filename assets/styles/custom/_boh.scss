@@ -1,0 +1,51 @@
+.boh-recipe {
+    h1 {
+        font-size: $spacer-2;
+        font-family: $font-family-monospace;
+        margin-bottom: 0;
+        color: $primary;
+        font-weight: 700;
+    }
+
+    .has-line {
+        padding-top: $spacer-1;
+        padding-bottom: $spacer-1;
+        @extend .border-bottom;
+    }
+
+    ul.analog-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding-left: $spacer-4;
+            @extend .has-line;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 27px;
+                display: block;
+                height: 15px;
+                width: 15px;
+                border-radius: 100%;
+                border: 1px solid $border-color;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 27px;
+                height: 15px;
+                width: 1px;
+                background-color: $border-color;
+                transform: translateX(14px * .5);
+            }
+
+        }
+
+    }
+}
