@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="wrapper py-6 border-bottom border-primary">
+    <div class="marquee">
+      <div class="marquee__group">
+        <p>
+          {{ page.marquee_text }} {{ page.marquee_text }} {{ page.marquee_text }} {{ page.marquee_text }} {{ page.marquee_text }} {{ page.marquee_text }}
+        </p>
+      </div>
+    </div>
+  </article>
+  <header class="vh-60 d-flex align-items-end py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                    {{ page.title }}
+                </p>
+                <h1 class="display-2">
+                    {{ page.page_title }}
+                </h1>
+            </div>
+        </div>
+    </div>
+  </header>
+  <article>
+    <div class="container bg-primary">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+  </article>
+{% assign data_sorted = page.collection_to_loop %}
+{% assign site_collection = site[data_sorted] %}
+{% for item in site_collection %}
+
+{% endfor %}

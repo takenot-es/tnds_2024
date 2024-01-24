@@ -1,45 +1,26 @@
-a.icon-link {
-    position: relative;
-    text-decoration: underline;
-
-    &:after {
-        content: 'arrow_forward';
-        color: currentColor;
-        position: absolute;
-        top: 55%;
-        right: -$spacer-2;
-        transform: translateY(-50%);
-        transition: all .3s ease-in-out;
-        font-family: 'Material Symbols Outlined';
-    }
+.icon-link {
+    height: 75px;
+    width: 75px;
+    border-radius: 50rem;
+    border: 1px solid $secondary;
+    background-color: rgba($secondary,.5);
+    font-family: 'Material Symbols Outlined';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    will-change: transform;
+    transition: all .3s ease-in-out;
 
     &:hover {
-        &:after {
-            right: -$spacer-1;
-        }
+        background-color: rgba($secondary,1);
     }
 
-}
-
-.large-btn {
-    @extend .h3; 
-    position: relative;
-
-    &:after {
-        content: '';
-        height: 2px;
-        background-color: $secondary;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: all .3s ease-in-out;
-        width: 0%;
-    }
-
-    &:hover {
-        &:after {
-            width: 100%;
+    &.icon-link-white {
+        border: 1px solid $white;
+        background-color: rgba($white,.5);
+        &:hover {
+            background-color: rgba($white,1);
+            color: $primary;
         }
     }
 

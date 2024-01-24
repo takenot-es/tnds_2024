@@ -298,14 +298,13 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       #1E2831 !default;
-$secondary:     #779F9D !default;
-$third:         #9F7756 !default;
+$primary:       #000000 !default;
+$secondary:     #f5571c !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         #DBD4CA !default;
+$light:         #fbf7f0 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -313,7 +312,6 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "third":       $third,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -876,7 +874,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-link-focus-shadow-rgb:   to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           var(--#{$prefix}border-radius) !default;
+$btn-border-radius:           50rem !default;
 $btn-border-radius-sm:        var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg:        var(--#{$prefix}border-radius-lg) !default;
 

@@ -26,6 +26,7 @@ category:
   - Branding
   - Front-End Development
   - Graphic Designer
+  - I'm not Carmy
 
 collections:
   pages:
@@ -34,6 +35,12 @@ collections:
   work:
     output: true
     permalink: /work/:title/
+  boh:
+    output: true
+    permalink: /backofhouse/:title/
+  archives:
+    output: true
+    permalink: /:title/
 
 defaults:
 - 
@@ -41,6 +48,16 @@ defaults:
     type: "work"
   values:
     layout: "casestudy"
+-
+  scope:
+    type: "boh"
+  values:
+    layout: "boh"
+-
+  scope:
+    type: "archives"
+  values:
+    layout: "archive"
   
 
 # Build settings
