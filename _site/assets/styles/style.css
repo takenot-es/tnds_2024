@@ -221,7 +221,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-family: "GT Sectra Display";
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: var(--bs-heading-color);
 }
 
@@ -599,7 +599,7 @@ progress {
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-1 {
@@ -610,7 +610,7 @@ progress {
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-2 {
@@ -621,7 +621,7 @@ progress {
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-3 {
@@ -632,7 +632,7 @@ progress {
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-4 {
@@ -643,7 +643,7 @@ progress {
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-5 {
@@ -654,7 +654,7 @@ progress {
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
-  line-height: 1.045;
+  line-height: 1.14;
 }
 @media (min-width: 1200px) {
   .display-6 {

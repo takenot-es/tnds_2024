@@ -2,7 +2,18 @@
 layout: default
 theme: dark
 ---
-<div class="containner-fluid pt-10 pb-4 boh-recipe">
+<div class="container-fluid pt-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <a href="/backofhouse/">
+                    ←&nbsp;&nbsp;Go back
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="containner-fluid pt-4 pb-4 boh-recipe">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto bg-light rounded py-2 px-2 text-primary">
@@ -30,7 +41,7 @@ theme: dark
                         </div>
                         <div class="col-md-4 has-line">
                             <p class="small mb-0 text-primary">
-                                Author: {% if page.author %}<a href="{{ page.link }}"><strong class="text-primary">{{ page.author }}</strong></a>{% else %}Ryan Underwood{% endif %}
+                                Author: {% if page.author %}<a href="{{ page.link }}" target="_blank"><strong class="text-primary">{{ page.author }}</strong></a>{% else %}Ryan Underwood{% endif %}
                             </p>
                         </div>
                     </div>
