@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
         {% assign sorted = site.work | sort: 'date' | reverse %}
-        {% for item in sorted | limit: 4 | offset: 1 %}
+        {% for item in sorted | limit: 4 %}
             <div class="col-md-6">
                 <a href="{{ item.url }}" class="project-link">
                     <div class="project-card">

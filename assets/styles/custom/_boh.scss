@@ -10,7 +10,7 @@
     .has-line {
         padding-top: $spacer-1;
         padding-bottom: $spacer-1;
-        @extend .border-bottom;
+        border-bottom: 1px solid $border-color;
     }
 
     ul.analog-list {
@@ -47,5 +47,25 @@
 
         }
 
+    }
+}
+
+.boh-article-content {
+    h1, h2, h3, h4, h5, h6, ul, p {
+        @extend .col-md-6;
+        @extend .mx-auto;
+    }
+
+    img {
+        @extend .img-fluid;
+        display: block;
+        margin-top: $spacer-2;
+        margin-bottom: $spacer-2;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 900px;
+        border-radius: $spacer-1;
+        overflow: hidden;
     }
 }

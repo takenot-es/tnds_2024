@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="wrapper py-6 border-bottom border-primary">
+<article class="wrapper mt-4 py-6 border-bottom border-primary">
     <div class="marquee">
       <div class="marquee__group">
         <p>
@@ -45,7 +45,7 @@ layout: default
         </div>
     </div>
 {% assign data_sorted = page.collection_to_loop %}
-{% assign site_collection = site[data_sorted] %}
+{% assign site_collection = site[data_sorted] | sort: 'date' | reverse %}
 {% for item in site_collection %}
 <a href="{{ item.url }}">
   <div class="container py-1 border-end border-start border-bottom">

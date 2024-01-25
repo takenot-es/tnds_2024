@@ -1,0 +1,13 @@
+<section class="cs-2-col-image">
+    <div class="container">
+        <div class="row">
+            {% for image in section.images %}
+            <div class="col-lg-6 py22">
+                <figure>
+                    <img src="{{ image.image }}" alt="{{ image.alt }}" class="img-fluid">
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

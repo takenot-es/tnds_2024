@@ -5,7 +5,7 @@
     {% include /global/analytics.html %}
     {% include /global/styles.html %}
 </head>
-<body data-bs-theme="{{ page.theme }}">
+<body {% if page.theme %}data-bs-theme="{{ page.theme }}"{% endif %} {% if layout.theme %}data-bs-theme="{{ layout.theme }}"{% endif %}>
     {% include /components/navigation.html %}
     <div class="content">
         <main class="{{ page.title | downcase | replace: ' ', '-' }} {{ site.title  | downcase | replace: ' ', '-' }} {{ page.layout }} {{ page.permalink | remove: '.html' }} bg-{{ page.main_background }}">

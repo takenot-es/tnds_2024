@@ -1,10 +1,11 @@
 ---
 layout: default
+theme: dark
 ---
-<div class="containner-fluid bg-primary py-10 boh-recipe">
+<div class="containner-fluid pt-10 pb-4 boh-recipe">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto bg-light rounded py-2 px-2">
+            <div class="col-md-6 mx-auto bg-light rounded py-2 px-2 text-primary">
                 <div class="container mb-4">
                     <!-- Page Title -->
                     <div class="row">
@@ -28,8 +29,8 @@ layout: default
                             </p>
                         </div>
                         <div class="col-md-4 has-line">
-                            <p class="small mb-0">
-                                Author: {% if page.author %}<a href="{{ page.link }}"><strong>{{ page.author }}</strong></a>{% else %}Ryan Underwood{% endif %}
+                            <p class="small mb-0 text-primary">
+                                Author: {% if page.author %}<a href="{{ page.link }}"><strong class="text-primary">{{ page.author }}</strong></a>{% else %}Ryan Underwood{% endif %}
                             </p>
                         </div>
                     </div>
@@ -72,6 +73,13 @@ layout: default
                     <!-- End Directions -->
                 </div> 
             </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pb-8 boh-article-content">
+    <div class="container">
+        <div class="row flex-column">
+            {{ page.content }}
         </div>
     </div>
 </div>

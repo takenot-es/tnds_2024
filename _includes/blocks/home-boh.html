@@ -12,3 +12,56 @@
         </div>
     </div>
 </div>
+<article class="pb-8">
+    <div class="container bg-secondary border-bottom">
+        <div class="row w-100 py-1 d-none d-md-flex">
+            <div class="col-md-4">
+              <p class="small text-uppercase mb-0 text-light">
+                Title
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="small text-uppercase mb-0 text-light">
+                Description
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="small text-uppercase mb-0 text-light">
+                Categories
+              </p>
+            </div>
+        </div>
+    </div>
+{% for item in site.boh | limit: 4 %}
+<a href="{{ item.url }}">
+  <div class="container py-1 border-end border-start border-bottom">
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <h5>
+          {{ item.title }}
+        </h5>
+      </div>
+      <div class="col-md-4 pe-md-2">
+          <p>
+            {{ item.description }}
+          </p>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-unstyled row p-0">
+        {% for category in item.categories %}
+          <li class="me-1 mb-1 small bg-secondary col-auto rounded-pill">
+            {{ category }}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-auto d-md-none py-1">
+        <p class="icon-link">
+          arrow_forward
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+{% endfor %}
+</article>
