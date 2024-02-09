@@ -1,17 +1,19 @@
 ---
-date: 2022-03-19
 title: Club Soda
-featured_image: /assets/media/featured-images/ClubSoda-Featured-Image.jpg
+date: 2022-03-19 00:00:00 Z
+categories:
+- Branding
+- Naming
+- Packaging
+- Art Direction
+- Experiential
+featured_image: "/assets/media/featured-images/ClubSoda-Featured-Image.jpg"
 loop_image: https://s3.us-east-2.wasabisys.com/takenotes/portfolio/projects/club-soda/csd_windows.jpg
 description: Branding for mocktails and coffee shop with a speakeasy feel.
-problem: Creating a brand system that is high-end, genuine, and feels like a great jazz bar.
-solution: Utilizing a clever name, classic monogram system, and rich colors and textures to build an upscale branding system. 
-category: 
-    - Branding
-    - Naming
-    - Packaging
-    - Art Direction
-    - Experiential 
+problem: Creating a brand system that is high-end, genuine, and feels like a great
+  jazz bar.
+solution: Utilizing a clever name, classic monogram system, and rich colors and textures
+  to build an upscale branding system.
 page_sections:
 - template: cs-2-col-image
   block: cs-2-col-image
@@ -36,3 +38,4 @@ page_sections:
   - image: https://s3.us-east-2.wasabisys.com/takenotes/portfolio/projects/club-soda/csd_cup_mockups.jpg
     alt: Cups
 ---
+

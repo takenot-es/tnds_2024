@@ -1,85 +1,70 @@
+---
 title: Takenotes Design Studio
+timezone: UTC
+collections:
+  archives:
+    title: Archives
+    output: true
+    permalink: "/:title/"
+  boh:
+    title: Boh
+    output: true
+    permalink: "/backofhouse/:title/"
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:title/"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+    permalink: "/work/:title/"
+defaults:
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: casestudy
+- scope:
+    path: ''
+    type: boh
+  values:
+    layout: boh
+- scope:
+    path: ''
+    type: archives
+  values:
+    layout: archive
 email: ryan@takenot.es
 author: Ryan Underwood
-description: Takenotes Design Studio is the design studio (desk in my living room) of me, Ryan Underwood. I am a non-award winning (It's all politics and I never submit anyways. I'm not bitter.) designer, leader, and somewhat of a front-end developer.
-brief_desc: The freelance studio of Ryan Underwood. A design leader guiding businesses to success.
-baseurl: "" 
-url: ""
-canonical_url: "http://takenot.es" 
-github:  https://github.com/takenot-es
+description: Takenotes Design Studio is the design studio (desk in my living room)
+  of me, Ryan Underwood. I am a non-award winning (It's all politics and I never submit
+  anyways. I'm not bitter.) designer, leader, and somewhat of a front-end developer.
+brief_desc: The freelance studio of Ryan Underwood. A design leader guiding businesses
+  to success.
+baseurl: ''
+url: ''
+canonical_url: http://takenot.es
+github: https://github.com/takenot-es
 instagram: https://www.instagram.com/noble_whiskers/
 linkedin: https://www.linkedin.com/in/ryanwunderwood/
 dribbble: https://dribbble.com/ryanunderwood
-
-featured_image: /assets/media/featured-images/Takenotes-Featured-Image.jpg
-favicon: /assets/media/featured-images/favicon.png
-
+featured_image: "/assets/media/featured-images/Takenotes-Featured-Image.jpg"
+favicon: "/assets/media/featured-images/favicon.png"
 google_tag: UA-112100017-1
-
 sass:
-  sass_dir: /assets/sass/
-
-
-category: 
-  - Art Direction
-  - Design System Lead
-  - Branding
-  - Front-End Development
-  - Graphic Designer
-  - I'm not Carmy
-
-collections:
-  pages:
-    output: true
-    permalink: /:title/
-  work:
-    output: true
-    permalink: /work/:title/
-  boh:
-    output: true
-    permalink: /backofhouse/:title/
-  archives:
-    output: true
-    permalink: /:title/
-
-defaults:
-- 
-  scope:
-    type: "work"
-  values:
-    layout: "casestudy"
--
-  scope:
-    type: "boh"
-  values:
-    layout: "boh"
--
-  scope:
-    type: "archives"
-  values:
-    layout: "archive"
-  
-
-# Build settings
+  sass_dir: "/assets/sass/"
+category:
+- Art Direction
+- Design System Lead
+- Branding
+- Front-End Development
+- Graphic Designer
+- I'm not Carmy
 plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- jekyll-feed

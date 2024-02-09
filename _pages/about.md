@@ -1,8 +1,9 @@
 ---
+title: About
 layout: default
 theme: dark
-title: About 
 ---
+
 <div class="container-fluid py-10 d-flex align-items-center" style="min-height: 100vh;">
     <div class="container">
         <div class="row">
